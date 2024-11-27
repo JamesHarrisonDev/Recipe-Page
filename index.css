@@ -1,14 +1,158 @@
+/* FONTS */
+
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.outfit-regular {
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* STYLES */
+
 * {
   margin: 0;
   padding: 0;
 }
 
-.food-image-container {
+body {
+  background-color: hsl(30, 54%, 90%);
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+li {
+  margin-top: 10px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.recipe-container {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px;
+  padding: 20px;
+  row-gap: 20px;
+  max-width: 600px;
 }
 
 img {
-  max-width: 95%;
-  padding-top: 20px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.meal-title {
+  font-weight: 800;
+}
+
+.preparation-time-container {
+  background-color: hsl(330, 100%, 98%);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+
+  p {
+    color: hsl(332, 51%, 32%);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    margin-left: 10px;
+  }
+}
+
+.ingredients-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  p {
+    color: hsl(14, 45%, 36%);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    margin-left: 10px;
+  }
+}
+
+.instructions-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  p {
+    color: hsl(14, 45%, 36%);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  ol {
+    margin-left: 10px;
+  }
+}
+
+.nutrition-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  p {
+    color: hsl(14, 45%, 36%);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .nutrition-item-container {
+    margin-top: 20px;
+    display: flex;
+    padding-left: 20px;
+
+    .nutrient-label {
+      color: grey;
+      font-size: 16px;
+      flex: 1;
+    }
+
+    .nutrient-amount {
+      flex: 1;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width:450px) {
+  body {
+    background-color: white;
+  }
+
+  .recipe-container {
+    margin: 0;
+  }
 }
