@@ -147,6 +147,10 @@ img {
   }
 }
 
+.attribution {
+  text-align: center;
+}
+
 @media (max-width:450px) {
   body {
     background-color: white;
